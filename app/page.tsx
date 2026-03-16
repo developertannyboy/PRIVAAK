@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-white p-10">
@@ -11,9 +12,11 @@ export default function Home() {
         about medications and follow-up appointments automatically.
       </p>
 
-      <button className="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg">
-        Get Started
-      </button>
+      <Link href="/dashboard">
+  <button className="bg-blue-600 text-white px-6 py-3 rounded-lg">
+    Get Started
+  </button>
+</Link>
 
     </main>
   );
